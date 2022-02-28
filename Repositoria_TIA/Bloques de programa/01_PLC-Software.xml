@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2022-02-28T20:45:45.7558179Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Static">
+    <Member Name="IN_Pistilos" Datatype="Array[0..14] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Subelement Path="0"><Comment><MultiLanguageText Lang="es-ES">Paro Emerg Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="1"><Comment><MultiLanguageText Lang="es-ES">Start Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="2"><Comment><MultiLanguageText Lang="es-ES">Stop Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="3"><Comment><MultiLanguageText Lang="es-ES">Trigger Cam 1 </MultiLanguageText></Comment></Subelement></Member>
+    <Member Name="IN_Pentoflex" Datatype="Array[0..14] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Subelement Path="0"><Comment><MultiLanguageText Lang="es-ES">Paro Emerg Producto Final</MultiLanguageText></Comment></Subelement><Subelement Path="1"><Comment><MultiLanguageText Lang="es-ES">Start Producto Final</MultiLanguageText></Comment></Subelement><Subelement Path="2"><Comment><MultiLanguageText Lang="es-ES">Stop Producto Final</MultiLanguageText></Comment></Subelement><Subelement Path="3"><Comment><MultiLanguageText Lang="es-ES">Trigger Cam 2 Final</MultiLanguageText></Comment></Subelement></Member>
+    <Member Name="IN_Cam_Pistilos" Datatype="Array[0..14] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="IN_Cam_Pentoflex" Datatype="Array[0..14] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="OUT_Pistilos" Datatype="Array[0..7] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Subelement Path="0"><Comment><MultiLanguageText Lang="es-ES">Motor Pistilos</MultiLanguageText></Comment></Subelement></Member>
+    <Member Name="OUT_Pentoflex" Datatype="Array[0..7] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Subelement Path="0"><Comment><MultiLanguageText Lang="es-ES">Motor Pentoflex</MultiLanguageText></Comment></Subelement></Member>
+    <Member Name="Pistilos_Estados_Varidor" Datatype="Array[0..7] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Subelement Path="0"><Comment><MultiLanguageText Lang="es-ES">Variador 1 ok</MultiLanguageText></Comment></Subelement></Member>
+    <Member Name="Alarmas" Datatype="Array[0..14] of Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Subelement Path="0"><Comment><MultiLanguageText Lang="es-ES">Alarma PE Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="1"><Comment><MultiLanguageText Lang="es-ES">Alarma_Fallo_Cam_Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="2"><Comment><MultiLanguageText Lang="es-ES">Alarma_NLectura_Cam_Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="3"><Comment><MultiLanguageText Lang="es-ES">Alarma_NCoincidencia_Cam_Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="4"><Comment><MultiLanguageText Lang="es-ES">Alama PE Pentoflex</MultiLanguageText></Comment></Subelement><Subelement Path="5"><Comment><MultiLanguageText Lang="es-ES">Alarma_Fallo_Cam_Pentoflex</MultiLanguageText></Comment></Subelement><Subelement Path="6"><Comment><MultiLanguageText Lang="es-ES">Alarma_NLectura_Cam_Pentoflex</MultiLanguageText></Comment></Subelement><Subelement Path="7"><Comment><MultiLanguageText Lang="es-ES">Alarma_NCoincidencia_Cam_Pentoflex</MultiLanguageText></Comment></Subelement></Member>
+    <Member Name="Estado_Proceso" Datatype="Array[0..14] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Subelement Path="0"><Comment><MultiLanguageText Lang="es-ES">Arranque Modo Automático Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="1"><Comment><MultiLanguageText Lang="es-ES">Arranque Modo Manual Pistilos</MultiLanguageText></Comment></Subelement><Subelement Path="2"><Comment><MultiLanguageText Lang="es-ES">Arranque Modo Automático Pentoflex</MultiLanguageText></Comment></Subelement><Subelement Path="3"><Comment><MultiLanguageText Lang="es-ES">Arranque Modo Manual Pentoflex</MultiLanguageText></Comment></Subelement></Member>
+  </Section>
+</Sections></Interface>
+      <IsOnlyStoredInLoadMemory>false</IsOnlyStoredInLoadMemory>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <IsWriteProtectedInAS>false</IsWriteProtectedInAS>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>01_PLC-Software</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>es-ES</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="3" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>es-ES</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>
